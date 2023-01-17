@@ -51,44 +51,63 @@ for (let i = 0; i < names.length; i++) {
 
 }
 // 7. Write a function that takes parameters, word and nameLengths, as arguments 
-// and returns the word concatenated to itself n number of times.
+// and returns the word concatenated to itself nameLengths number of times.
 // (i.e. if I pass in 'Hello' and 3, I would expect the function to return 'HelloHelloHello')
 
 // step one -  write a function that takes parameters, work and nameLenghts
-let functionNew(word, nameLengths) {
-    functionNew.concat(word, nameLengths)
+function functionNew(word, nameLengths) {
+    let returnedWord = '';
+    for(i = 0; i < nameLengths; i++) { // loop nameLengths times
+        returnedWord = returnedWord.concat(word)
+    }
+    return returnedWord;
 }
-// step two return the word concatenated to itself 
-?
 
 // 8.   Write a function that takes two parameters, firstName and lastName, and returns a full name.
 // The full name should be the first and the last name separated by a space.
-let fullName(firstName, lastName) {
+function fullName(firstName, lastName) {
     console.log(firstName + lastName)
-
+    return firstName + lastName
 }
+
 
 // 9.   Write a function that takes an array of numbers and returns true 
 // if the sum of all the numbers in the array is greater than 100.
+function newDay(numbers) {
+    let sumTotal = 0;
+    // loop through numbers array
+    // add to sum total
+    // close loop
+    // return conditional
+}
+newDay([3,4,5])
 
-// 10.  Write a function that takes an array of numbers and returns the average of all the elements in the array.
-function sum(numArray) {
+// 10.  Write a function that takes an array of numbers and returns the average of 
+//all the elements in the array.
+function avg(numArray) {
     let total = 0;
     for (let value of array) {
       total += value;
     }
-    return total; 
+    return total/numArray.length; 
   }
 
 // 11.  Write a function that takes two arrays of numbers and returns true
 //  if the average of the elements in the first array is greater than the average of the elements in the second array.
-let array[7, 9] {
-    
+function array(arr1, arr2) {
+    const avg1 = avg(arr1);
+    const avg2 = avg(arr2);
+    // same for arr2
+    // return conditional avg1 > avg2
+    return (avg1 > avg2)
 }
 
+
 // 12.  Write a function called willBuyDrink that takes a boolean isHotOutside, 
-// and a number moneyInPocket, and returns true if it is hot outside and if moneyInPocket is greater than 10.50.
-let willBuyDrink() {
+// and a number moneyInPocket, and returns true if it is hot outside 
+//and if moneyInPocket is greater than 10.50.
+function willBuyDrink(isHotOutside, moneyInPocket) {
+    return isHotOutside && moneyInPocket > 10.5
 
 }
 
